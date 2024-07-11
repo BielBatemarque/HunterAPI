@@ -11,3 +11,7 @@ class Job(models.Model):
     def __str__(self) -> str:
         return self.titulo
     
+
+class Portal(models.Model):
+    nome = models.CharField(max_length=20)
+    url = models.CharField(max_length=100)
