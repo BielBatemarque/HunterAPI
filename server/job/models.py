@@ -7,3 +7,7 @@ class Job(models.Model):
     modelo_contratacao = models.CharField(max_length=15)
     senioridade = models.CharField(max_length=20)
     site_busca = models.CharField(max_length=15)
+
+    def __str__(self) -> str:
+        return self.titulo
+    
