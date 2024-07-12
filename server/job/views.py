@@ -6,6 +6,6 @@ class JobViewSets(viewsets.ModelViewSet):
     queryset = Job.objects.all()
     serializer_class = JobSerializer
 
-class PortalSerializer(viewsets.ModelViewSet):
+class PortalViewSets(viewsets.ModelViewSet):
     queryset = Portal.objects.all()
     serializer_class = PortalSerializer
