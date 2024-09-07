@@ -6,4 +6,5 @@ class HunterApi:
         self.base_utl = "http://localhost:8000"
 
         
-    def enviar_job()
+    def enviar_job():
+        pass
