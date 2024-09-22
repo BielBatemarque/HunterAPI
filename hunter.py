@@ -1,10 +1,17 @@
-class Hunter:
+from utils.logger import Logger
+from utils.config import Config
+
+class Hunter():
 
     def __init__(self) -> None:
-        pass
+        self.config = Config.retorna_preferenciais_de_busca()
 
-    def buscar(self):
-        pass
+    def iniciar_busca(self):
+        Logger.debug("Inicando busca...")
+        
+
+
+        
 
 if __name__ == '__main__':
     hunter = Hunter()
