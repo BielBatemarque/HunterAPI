@@ -20,13 +20,15 @@ class Config:
 
         Config.ler_arquivo_cfg()
 
-        if not Config.parser.has_section("dados"):
-            Config.parser.add_section("dados")
-            Config.parser.set("dados", "marketplace", "")
+        if not Config.parser.has_section("portal"):
+            Config.parser.add_section("portal")
+            Config.parser.set("portal", "url", "")
 
         try:
             return {
-                "marketplace" : Config.parser.get("dados", "marketplace")
+                "portal" : Config.parser.get("portal", "url"),
+                "url" : Config.parser.get("portal", "nome"),
+                "vaga": Config.parser.get("portal", "vaga"),
             }
 
         except:
